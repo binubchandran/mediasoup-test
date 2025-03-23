@@ -5,8 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js",
-    "watch": "watchify public/index.js -o public/bundle.js -v"
+    "start": "node app.js",
+    "watch": "watchify public/index.js -o public/bundle.js -v",
+    "build": "webpack --mode production"
   },
   "author": "amir eshaq",
   "license": "ISC",
